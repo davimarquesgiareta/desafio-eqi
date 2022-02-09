@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(231, 231, 231);
+}
+
+h2{
+  font-size: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+
+}
+
+.content input{
+  
+  outline: 0;
+  border-width: 0 0 2px;
+  background-color:rgb(231, 231, 231); ;
+  
+}
+
+.formInputs {
+  margin-left: 2rem;
+  width: 25%;
+}
+
+.resultsContent{
+  
+  width: 75%;
+}
+
+.leftSimulatorContent{
+  width: 50%;
+}
+
+.rightSimulatorContent{
+  display: block;
+  text-align: end;
+  width: 50%;
+}
+
+.flexButton {
+  display: flex;
+
+}
+
+.formButton{
+  border-width: 1px;
+  background-color: rgb(231, 231, 231);
+  height: 2rem;
+  width: 4rem;
+}
+
+.cleanFieldsButton{
+  font-weight: bold;
+  background-color: rgb(231, 231, 231);
+  margin-top: 1.5rem;
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  border-width: 1px;
+  border-radius: 6px;
+  margin-right: 1rem;
+}
+
+.simulationButton{
+  font-weight: bold;
+  background-color: rgb(155, 155, 155);
+  margin-top: 1.5rem;
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  border-width: 1px;
+  border-radius: 6px;
+}
+
+.buttonsForm{
+  display: flex;
+}
+
+.labelRightSimulatorFields{
+  display:block;
+  text-align: start;
+  margin-left: 2rem;
+}
+
+@media(max-width: 1300px){
+  .formInputs {
+    width: 30%;
+  }
+  
+  .resultsContent{
+    
+    width: 70%;
+  }
+
+}
+
+@media(max-width: 1000px){
+  .formInputs {
+    width: 40%;
+  }
+  
+  .resultsContent{
+    
+    width: 60%;
+  }
+
+}
+
+@media(max-width: 800px){
+  .formInputs {
+    width: 50%;
+  }
+  
+  .resultsContent{
+    
+    width: 50%;
+  }
+
+}
+
+@media(max-width: 650px){
+  .content{
+    display: block;
+  }
+
+  .formInputs {
+    width: 100%;
+  }
+
+  .leftSimulatorContent{
+    width: 90%;
+  }
+
+  .rightSimulatorContent{
+    width: 90%;
+  }
+  
+  .content input{
+  
+    outline: 0;
+    border-width: 0 0 2px;
+    background-color:rgb(231, 231, 231); ;
+    width: 100%;
+  }
+
+  .buttonsForm{
+    display: block;
+    margin-right: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+  }
+
+}
