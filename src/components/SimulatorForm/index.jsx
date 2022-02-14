@@ -6,30 +6,30 @@ export default function SimulatorForm(){
   return(
     <div className="formInputs" >
         <h2>Simulador</h2>
-        <div className='content' style={{marginTop:"1rem"}}>
+        <div className='content' >
 
           <div className='leftSimulatorContent' style={{marginRight:"10px"}}>
 
-            <label>Rendimento i</label>
+            <label className="titleLabels">Rendimento i</label>
 
             <div className='flexButton'>
               <button className='formButton' style={{borderRadius:"4px 0px 0px 4px"}}>Bruto</button>
               <button className='formButton' style={{borderRadius:"0px 4px 4px 0px"}}>Líquido</button>
             </div>
 
-            <div style={{marginTop:"1.5rem", marginBottom:"1.5rem"}}  >
+            <div className="labelFields"  >
               Aporte Inicial
             </div>
 
             <input type="text" id="" name=""/>
 
-            <div style={{marginTop:"1.5rem", marginBottom:"1.5rem"}} >
+            <div className="labelFields" >
               Aporte Inicial
             </div>  
 
             <input type="text" id="" name=""/>
 
-            <div style={{marginTop:"1.5rem", marginBottom:"1.5rem"}} >
+            <div className="labelFields" >
               Aporte Inicial
             </div>
 
@@ -39,31 +39,31 @@ export default function SimulatorForm(){
 
           <div className='rightSimulatorContent'>
 
-          <label className="marginLeftPropToRightSimulatorContent" style={{display:"block", textAlign:"start"}}>Rendimento i</label>
+          <label className="marginLeftPropToRightSimulatorContent" style={{display:"block", textAlign:"start", marginBottom:"12px"}}>Rendimento i</label>
 
-            <div className='flexButton'>
+            <div className='flexButtonWithJustifyContent'>
               <button className='firstFormButton' style={{borderRadius:"4px 0px 0px 4px"}}>PRÉ</button>
               <button className='formButton' >PÓS</button>
               <button className='formButton' style={{borderRadius:"0px 4px 4px 0px"}}>FIXADO</button>
             </div>
             
-            <div style={{marginTop:"1.5rem", marginBottom:"1.5rem"}}  >
-              <label className='labelRightSimulatorFields'>Aporte</label>
+            <div className="labelFields"  >
+              <label className='labelRightSimulatorFields'>Aporte 1</label>
             </div>
 
-            <input type="text" id="" name=""/>
+            <input className="inputMaxWidth" type="text" id="" name=""/>
               
-            <div style={{marginTop:"1.5rem", marginBottom:"1.5rem"}} >
+            <div className="labelFields" >
               <label className='labelRightSimulatorFields'>Aporte</label>
             </div>  
             
-            <input type="text" id="" name=""/>
+            <input className="inputMaxWidth" type="text" id="" name=""/>
 
-            <div style={{marginTop:"1.5rem", marginBottom:"1.5rem"}} >
+            <div className="labelFields" >
               <label className='labelRightSimulatorFields'>Aporte</label>
             </div>
 
-            <input type="text" id="" name=""/>
+            <input className="inputMaxWidth" type="text" id="" name=""/>
             
           </div>
 

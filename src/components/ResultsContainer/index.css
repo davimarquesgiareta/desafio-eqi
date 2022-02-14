@@ -1,86 +1,113 @@
-
-.resultsContent{
-  
-  width: 75%;
+.resultsContent {
+  width: 70%;
+  padding: 1rem;
+  margin-left: 2rem;
 }
 
+.cardsField{
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+}
 
-@media(max-width: 1300px){
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(124, 123, 123, 0.596) 2px 2px 2px 2px;
+  margin-right: 1rem;
+  padding: 3px;
+  background-color: white;
+  width: 300px;
+  height: 100px;
+  text-align: center; 
+}
+
+h2{
+
+}
+
+h3 {
+  font-size: 16px ;
+}
+
+@media (max-width: 1300px) {
   .formInputs {
     width: 30%;
   }
-  
-  .resultsContent{
-    
+
+  .resultsContent {
     width: 70%;
   }
-
 }
 
-@media(max-width: 1000px){
+@media (max-width: 1000px) {
   .formInputs {
     width: 40%;
   }
-  
-  .resultsContent{
-    
+
+  .resultsContent {
     width: 60%;
   }
-
 }
 
-@media(max-width: 800px){
+@media (max-width: 800px) {
   .formInputs {
     width: 50%;
   }
-  
-  .resultsContent{
-    
+
+  .resultsContent {
     width: 50%;
   }
-
 }
 
-@media(max-width: 650px){
-  .content{
+@media (max-width: 650px) {
+  .resultsContent{
+    margin: 0;
+    width: 100%;
+    font-size: 13px;
+  }
+
+  h3{
+    font-size: 13px;
+  }
+
+  .content {
     display: block;
   }
 
   .formInputs {
-    
     width: 100%;
   }
 
-  .leftSimulatorContent{
+  .leftSimulatorContent {
     width: 100%;
   }
 
-  .rightSimulatorContent{
+  .rightSimulatorContent {
     width: 100%;
   }
-  
-  .content input{
-  
+
+  .content input {
     outline: 0;
     border-width: 0 0 2px;
-    background-color:rgb(231, 231, 231); ;
+    background-color: rgb(231, 231, 231);
     width: 100%;
   }
 
-  
-  .cleanFieldsButton{
+  .cleanFieldsButton {
     margin-right: 0;
     width: 100%;
   }
 
-  .simulationButton{
+  .simulationButton {
     margin-right: 0;
     width: 100%;
   }
 
-  .title{
+  .title {
     display: flex;
     justify-content: center;
   }
-
 }
