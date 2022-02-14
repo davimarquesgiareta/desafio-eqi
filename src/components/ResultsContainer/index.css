@@ -1,41 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body{
-  background-color: rgb(231, 231, 231);
-}
-
-h2{
-  font-size: 20px;
-}
-
-button {
-  cursor: pointer;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.content {
-  width: 100%;
-  display: flex;
+.resultsContent{
   
-  
+  width: 75%;
 }
-
-.content input{
-  
-  outline: 0;
-  border-width: 0 0 2px;
-  background-color:rgb(231, 231, 231); ;
-  
-}
-
 
 
 @media(max-width: 1300px){

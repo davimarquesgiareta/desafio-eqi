@@ -1,0 +1,14 @@
+
+.title{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+@media(max-width: 650px){
+  .title{
+    margin-left: 1rem;
+  }
+
+}

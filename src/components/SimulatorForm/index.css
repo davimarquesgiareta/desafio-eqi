@@ -1,0 +1,184 @@
+.formInputs {
+  /* margin-left: 2rem; */
+ 
+  padding: 1rem;
+  width: 25%;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+   
+}
+
+.leftSimulatorContent{
+  width: 50%;
+  
+}
+
+.flexButton {
+  display: flex;
+
+}
+
+.firstFormButton{
+  border-width: 1px;
+  background-color: rgb(231, 231, 231);
+  height: 2rem;
+  width: 4rem;
+}
+
+.formButton{
+  border-width: 1px;
+  background-color: rgb(231, 231, 231);
+  height: 2rem;
+  width: 4rem;
+}
+
+.rightSimulatorContent{
+  display: block;
+  text-align: end;
+  width: 50%;
+}
+
+.labelRightSimulatorFields{
+  display:block;
+  text-align: start;
+  margin-left: 2rem;
+}
+
+.buttonsForm{
+  display: block;
+  /* margin-right: 2.2rem; */
+  margin-bottom: 1rem;
+}
+
+.cleanFieldsButton{
+  font-weight: bold;
+  background-color: rgb(231, 231, 231);
+  margin-top: 1.5rem;
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  border-width: 1px;
+  border-radius: 6px;
+  margin-right: 1rem;
+}
+
+.simulationButton{
+  font-weight: bold;
+  background-color: rgb(155, 155, 155);
+  margin-top: 1.5rem;
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  border-width: 1px;
+  border-radius: 6px;
+}
+
+.buttonsForm{
+  display: flex;
+}
+
+.marginLeftPropToRightSimulatorContent {
+  margin-left: 2rem;
+}
+
+@media(max-width: 1300px){
+  .formInputs {
+    width: 30%;
+  }
+  
+  .resultsContent{
+    
+    width: 70%;
+  }
+
+}
+
+@media(max-width: 1000px){
+  .formInputs {
+    width: 40%;
+  }
+  
+  .resultsContent{
+    
+    width: 60%;
+  }
+
+}
+
+@media(max-width: 800px){
+  .formInputs {
+    width: 50%;
+  }
+  
+  .resultsContent{
+    
+    width: 50%;
+  }
+
+}
+
+@media(max-width: 650px){
+  .content{
+    display: block;
+  }
+
+  .formInputs {
+    
+    width: 100%;
+  }
+
+  .leftSimulatorContent{
+    width: 100%;
+  }
+
+  .rightSimulatorContent{
+    width: 100%;
+  }
+  
+  .content input{
+  
+    outline: 0;
+    border-width: 0 0 2px;
+    background-color:rgb(231, 231, 231); ;
+    width: 100%;
+  }
+
+  
+  .cleanFieldsButton{
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .simulationButton{
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+  }
+
+  .marginLeftPropToRightSimulatorContent {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .firstFormButton{
+    margin-left: 0;
+  }
+
+  .labelRightSimulatorFields{
+    display:block;
+    text-align: start;
+    margin-left: 0;
+  }
+
+  .buttonsForm{
+    display: block;
+  }
+
+}
