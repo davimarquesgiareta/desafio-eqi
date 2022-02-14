@@ -5,12 +5,16 @@
 }
 
 .cardsField{
+
   display: flex;
   margin-top: 1rem;
   margin-bottom: 3rem;
   justify-content: space-between;
+
 }
 
+
+/* 
 .card{
   display: flex;
   flex-direction: column;
@@ -22,11 +26,8 @@
   width: 300px;
   height: 100px;
   text-align: center; 
-}
+} */
 
-h2{
-
-}
 
 h3 {
   font-size: 16px ;
@@ -65,7 +66,6 @@ h3 {
 @media (max-width: 650px) {
   .resultsContent{
     margin: 0;
-    width: 100%;
     font-size: 13px;
   }
 
@@ -110,4 +110,8 @@ h3 {
     display: flex;
     justify-content: center;
   }
+
+  
+
+  
 }

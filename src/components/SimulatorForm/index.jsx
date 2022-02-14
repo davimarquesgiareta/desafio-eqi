@@ -1,8 +1,19 @@
-import react from "react";
+import react, {useState} from "react";
 
 import './index.css'
 
 export default function SimulatorForm(){
+
+
+  const [yieldButton, setYieldButton] = useState('')
+  const [indexingTypesButton, setIndexingTypesButton] = useState('')
+
+  function simulate (){
+    console.log(yieldButton + ' ' + indexingTypesButton)
+
+  }
+
+
   return(
     <div className="formInputs" >
         <h2>Simulador</h2>
@@ -13,8 +24,8 @@ export default function SimulatorForm(){
             <label className="titleLabels">Rendimento i</label>
 
             <div className='flexButton'>
-              <button className='formButton' style={{borderRadius:"4px 0px 0px 4px"}}>Bruto</button>
-              <button className='formButton' style={{borderRadius:"0px 4px 4px 0px"}}>Líquido</button>
+              <button className={yieldButton === 'brutoActive'? 'isActive' : 'formButton'} onClick={()=> setYieldButton('brutoActive')} style={{borderRadius:"4px 0px 0px 4px"}}>Bruto</button>
+              <button className={yieldButton === 'liquidoActive'? 'isActive' : 'formButton'} onClick={()=> setYieldButton('liquidoActive')} style={{borderRadius:"0px 4px 4px 0px"}}>Líquido</button>
             </div>
 
             <div className="labelFields"  >
@@ -42,8 +53,8 @@ export default function SimulatorForm(){
           <label className="marginLeftPropToRightSimulatorContent" style={{display:"block", textAlign:"start", marginBottom:"12px"}}>Rendimento i</label>
 
             <div className='flexButtonWithJustifyContent'>
-              <button className='firstFormButton' style={{borderRadius:"4px 0px 0px 4px"}}>PRÉ</button>
-              <button className='formButton' >PÓS</button>
+              <button className={indexingTypesButton=== 'preActive'? 'isActive' : 'firstFormButton'} onClick={()=> setIndexingTypesButton('preActive')} style={{borderRadius:"4px 0px 0px 4px"}}>PRÉ</button>
+              <button className={indexingTypesButton=== 'posActive'? 'isActive' : 'formButton'} onClick={()=> setIndexingTypesButton('posActive')} >PÓS</button>
               <button className='formButton' style={{borderRadius:"0px 4px 4px 0px"}}>FIXADO</button>
             </div>
             
@@ -72,7 +83,7 @@ export default function SimulatorForm(){
         <div className='buttonsForm'>
 
           <button className='cleanFieldsButton'> limpar Campos </button>
-          <button className='simulationButton' > Simular</button>
+          <button className='simulationButton' onClick={()=> simulate()} > Simular</button>
 
         </div>
        

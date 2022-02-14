@@ -53,6 +53,21 @@
   width: 4rem;
 }
 
+.brutoButton{
+  border-width: 1px;
+  background-color: rgb(231, 231, 231);
+  height: 2rem;
+  width: 4rem;
+}
+
+.isActive{
+  border-width: 1px;
+  background-color: rgb(231, 231, 231);
+  height: 2rem;
+  width: 4rem;
+  background-color: red;
+}
+
 .rightSimulatorContent {
   display: block;
   text-align: end;
