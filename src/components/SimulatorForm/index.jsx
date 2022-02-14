@@ -54,15 +54,15 @@ export default function SimulatorForm(){
 
           <div className='rightSimulatorContent'>
 
-          <div className="divTitleLabelsRight" >
-             <label className="marginLeftPropToRightSimulatorContent" >Rendimento i </label>
-            <img src="https://img.icons8.com/material-outlined/24/000000/info.png"/>
+          <div className="divTitleLabelsRight">
+             <label className="marginLeftPropToRightSimulatorContent" >Rendimento </label>
+              <img src="https://img.icons8.com/material-outlined/24/000000/info.png"/>
             </div>
             
           
 
             <div className='flexButtonWithJustifyContent'>
-              <button className={indexingTypesButton=== 'preActive'? 'isActive' : 'firstFormButton'} onClick={()=> setIndexingTypesButton('preActive')} style={{borderRadius:"4px 0px 0px 4px"}}>PRÉ</button>
+              <button className={indexingTypesButton=== 'preActive'? 'isActive' : 'firstFormButton'} onClick={()=> setIndexingTypesButton('preActive')} style={{borderRadius:"4px 0px 0px 4px"}}> PRÉ</button>
               <button className={indexingTypesButton=== 'posActive'? 'isActive' : 'formButton'} onClick={()=> setIndexingTypesButton('posActive')} >PÓS</button>
               <button className='formButton' style={{borderRadius:"0px 4px 4px 0px"}}>FIXADO</button>
             </div>
