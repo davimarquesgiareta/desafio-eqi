@@ -2,9 +2,29 @@
   width: 93%;
 }
 
+.divTitleLabels{
+  display:flex;
+  margin-right: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  
+}
+
+.divTitleLabelsRight{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
 .titleLabels{
   display:flex;
   margin-bottom: 12px;
+  background-color: yellow;
+  
+ 
+ 
 }
 
 .labelFields{
@@ -32,6 +52,8 @@
 
 .flexButton {
   display: flex;
+  margin-right: 2rem;
+  background-color: yellow;
 }
 
 .flexButtonWithJustifyContent {
@@ -193,6 +215,20 @@
 
   .firstFormButton {
     margin-left: 0;
+    width: 100%;
+  }
+
+  .formButton{
+    width: 100%;
+  }
+
+  .isActive{
+    border-width: 1px;
+    background-color: rgb(231, 231, 231);
+    height: 2rem;
+    width: 4rem;
+    background-color: red;
+    width: 100%;
   }
 
   .labelRightSimulatorFields {
@@ -208,5 +244,11 @@
   .flexButtonWithJustifyContent {
     display: flex;
     justify-content: flex-start;
+    width: 100%;
+  }
+
+  .flexButton {
+    display: flex;
+    width: 100%;
   }
 }

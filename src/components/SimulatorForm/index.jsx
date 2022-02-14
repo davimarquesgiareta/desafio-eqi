@@ -21,11 +21,15 @@ export default function SimulatorForm(){
 
           <div className='leftSimulatorContent' style={{marginRight:"10px"}}>
 
-            <label className="titleLabels">Rendimento i</label>
+            <div className="divTitleLabels" >
+            <label >Rendimento </label>
+            <img src="https://img.icons8.com/material-outlined/24/000000/info.png"/>
+            </div>
+            
 
             <div className='flexButton'>
-              <button className={yieldButton === 'brutoActive'? 'isActive' : 'formButton'} onClick={()=> setYieldButton('brutoActive')} style={{borderRadius:"4px 0px 0px 4px"}}>Bruto</button>
-              <button className={yieldButton === 'liquidoActive'? 'isActive' : 'formButton'} onClick={()=> setYieldButton('liquidoActive')} style={{borderRadius:"0px 4px 4px 0px"}}>Líquido</button>
+              <button className={yieldButton === 'brutoActive'? 'isActive' : 'formButton'} onClick={()=> setYieldButton('brutoActive')} style={{borderRadius:"4px 0px 0px 4px", width:"100%"}}>Bruto</button>
+              <button className={yieldButton === 'liquidoActive'? 'isActive' : 'formButton'} onClick={()=> setYieldButton('liquidoActive')} style={{borderRadius:"0px 4px 4px 0px",width:"100%"}}>Líquido</button>
             </div>
 
             <div className="labelFields"  >
@@ -50,7 +54,12 @@ export default function SimulatorForm(){
 
           <div className='rightSimulatorContent'>
 
-          <label className="marginLeftPropToRightSimulatorContent" style={{display:"block", textAlign:"start", marginBottom:"12px"}}>Rendimento i</label>
+          <div className="divTitleLabelsRight" >
+             <label className="marginLeftPropToRightSimulatorContent" >Rendimento i </label>
+            <img src="https://img.icons8.com/material-outlined/24/000000/info.png"/>
+            </div>
+            
+          
 
             <div className='flexButtonWithJustifyContent'>
               <button className={indexingTypesButton=== 'preActive'? 'isActive' : 'firstFormButton'} onClick={()=> setIndexingTypesButton('preActive')} style={{borderRadius:"4px 0px 0px 4px"}}>PRÉ</button>
