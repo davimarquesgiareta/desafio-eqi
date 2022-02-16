@@ -19,13 +19,10 @@ export default function ResultsContainer() {
 
   // GRAPH FIELDS
 
-  const [flagButton, setFlagButton] = useState('')
   
-
   async function consumeApiSimulation(indexType, yieldInf) {
       const {data } = await api.get(`simulacoes?tipoIndexacao=${indexType}&tipoRendimento=${yieldInf}`);
-      console.log("ENTREI SHOW")
-
+      
       setGrossFinalValue(data[0].valorFinalBruto)
       setAliquotIR(data[0].aliquotaIR)
       setAmoutPaidIR(data[0].valorPagoIR)
@@ -63,7 +60,8 @@ export default function ResultsContainer() {
   }
 
   return (
-    <div className="resultsContent">
+    yieldInfo && (
+      <div className="resultsContent">
       <div className="simulationResults" >
         <h2>Resultado da Simulação</h2>
         <div className="cardsField" >
@@ -85,5 +83,7 @@ export default function ResultsContainer() {
         <h3> Projeção de valores </h3>
       </div>
     </div>
+    )
+   
   );
 }

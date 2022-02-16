@@ -8,7 +8,7 @@ import { FormContext } from "../../context/FormContext";
 
 export default function SimulatorForm(){
 
-  const { yieldInfo,  indexingTypes, changeSimulatorInfo }= useContext(FormContext)
+  const { changeSimulatorInfo }= useContext(FormContext)
   
   //FORM FIELDS
   const [yieldButton, setYieldButton] = useState('brutoActive') // Botão de Rendimento
