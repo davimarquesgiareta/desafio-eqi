@@ -4,33 +4,15 @@
   margin-left: 2rem;
 }
 
-.cardsField{
-
+.cardsField {
   display: flex;
   margin-top: 1rem;
   margin-bottom: 3rem;
   justify-content: space-between;
-
 }
 
-
-/* 
-.card{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: rgba(124, 123, 123, 0.596) 2px 2px 2px 2px;
-  margin-right: 1rem;
-  padding: 3px;
-  background-color: white;
-  width: 300px;
-  height: 100px;
-  text-align: center; 
-} */
-
-
 h3 {
-  font-size: 16px ;
+  font-size: 16px;
 }
 
 @media (max-width: 1300px) {
@@ -64,12 +46,12 @@ h3 {
 }
 
 @media (max-width: 650px) {
-  .resultsContent{
+  .resultsContent {
     margin: 0;
     font-size: 13px;
   }
 
-  h3{
+  h3 {
     font-size: 13px;
   }
 
@@ -110,8 +92,4 @@ h3 {
     display: flex;
     justify-content: center;
   }
-
-  
-
-  
 }

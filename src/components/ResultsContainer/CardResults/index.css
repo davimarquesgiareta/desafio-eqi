@@ -1,4 +1,4 @@
-.card{
+.card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -8,8 +8,5 @@
   background-color: white;
   width: 300px;
   height: 100px;
-  text-align: center; 
-
+  text-align: center;
 }
-
-

@@ -4,12 +4,12 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: rgb(231, 231, 231);
   font-family: sans-serif;
 }
 
-h2{
+h2 {
   font-size: 20px;
 }
 
@@ -25,96 +25,80 @@ a {
 .content {
   width: 100%;
   display: flex;
-  
-  
 }
 
-.content input{
-  
+.content input {
   outline: 0;
   border-width: 0 0 2px;
-  background-color:rgb(231, 231, 231); ;
-  
+  background-color: rgb(231, 231, 231);
 }
 
-
-
-@media(max-width: 1300px){
+@media (max-width: 1300px) {
   .formInputs {
     width: 30%;
   }
-  
-  .resultsContent{
-    
+
+  .resultsContent {
     width: 70%;
   }
-
 }
 
-@media(max-width: 1000px){
+@media (max-width: 1000px) {
   .formInputs {
     width: 40%;
   }
-  
-  .resultsContent{
-    
+
+  .resultsContent {
     width: 60%;
   }
-
 }
 
-@media(max-width: 800px){
+@media (max-width: 800px) {
   .formInputs {
     width: 50%;
   }
-  
-  .resultsContent{
-    
+
+  .resultsContent {
     width: 100%;
   }
-
 }
 
-@media(max-width: 650px){
-  .content{
+@media (max-width: 650px) {
+  .content {
     display: block;
   }
 
   .formInputs {
-    
     width: 100%;
   }
 
-  .leftSimulatorContent{
+  .leftSimulatorContent {
     width: 100%;
   }
 
-  .rightSimulatorContent{
+  .rightSimulatorContent {
     width: 100%;
   }
-  
-  .content input{
-  
+
+  .content input {
     outline: 0;
     border-width: 0 0 2px;
-    background-color:rgb(231, 231, 231); ;
+    background-color: rgb(231, 231, 231);
     width: 100%;
   }
 
-  
-  .cleanFieldsButton{
+  .cleanFieldsButton {
     margin-right: 0;
     width: 100%;
   }
 
-  .simulationButton{
+  .simulationButton {
     margin-right: 0;
     width: 100%;
   }
 
-  .title{
+  .title {
     display: flex;
     justify-content: center;
   }
-
 }
