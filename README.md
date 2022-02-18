@@ -3,10 +3,10 @@
 
 Uma aplicação front end estilo dashboard de simulação de investimentos propostos pela empresa EQI Investimentos.
 
-Requisistos: 
-   * NodeJS
-   * NPM
-   * [Backend Desafio Fake Api ](https://github.com/eqi-investimentos/desafio-fake-api)
+Requisitos: 
+   * NodeJS.
+   * NPM.
+   * [Backend Desafio Fake Api. ](https://github.com/eqi-investimentos/desafio-fake-api)
    
 ## Rodando localmente
 
@@ -43,15 +43,14 @@ Inicie o servidor
 
 ## Bibliotecas
 
-* Apex Charts.js (Geração dos gráficos)
-* Axios (requisições AJAX)
-* React Currency Format (formatação do dinheiro)
-* Jest.js (Para os testes unitários)
-
+* [Apex Charts.js](https://apexcharts.com/) (Geração dos Gráficos).
+* [Axios](https://www.npmjs.com/package/axios) (Requisições AJAX).
+* [React Currency Format](https://www.npmjs.com/package/axios) (Formatação do dinheiro e validação do campo).
+* [Jest.js ](https://jestjs.io/pt-BR/) (Testes unitários).
 
 ## Informações Adicionais
 
 * Responsividade para dispostiveis móveis.
 * Código Formatado com o Prettier.
-* Cuidado especiais com o uso das tags html para SEO.
+* Otimização para SEO (meta tags).
 
