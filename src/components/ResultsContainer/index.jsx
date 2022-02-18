@@ -17,9 +17,6 @@ export default function ResultsContainer() {
   const [liquidFinalValue, setLiquidFinalValue] = useState(""); // Valor Final Líquido
   const [liquidGain, setLiquidGain] = useState("");
 
-  var arrayWithAportGlobal = [];
-  var arrayWithoutAportGlobal = [];
-
   async function consumeApiSimulation(indexType, yieldInf) {
     const { data } = await api.get(
       `simulacoes?tipoIndexacao=${indexType}&tipoRendimento=${yieldInf}`
@@ -31,23 +28,9 @@ export default function ResultsContainer() {
     setTotalAmountInvested(data[0].valorTotalInvestido);
     setLiquidFinalValue(data[0].valorFinalLiquido);
     setLiquidGain(data[0].ganhoLiquido);
-
-    var objectWithAportData = data[0].graficoValores.comAporte;
-    var objectWithoutAportData = data[0].graficoValores.semAporte;
-
-    var arrayWithAportData = Object.keys(objectWithAportData).map(
-      (key) => objectWithAportData[key]
-    );
-    var arrayWithoutAportData = Object.keys(objectWithoutAportData).map(
-      (key) => objectWithoutAportData[key]
-    );
-
-    arrayWithAportGlobal = arrayWithAportData;
-    arrayWithoutAportGlobal = arrayWithoutAportData;
   }
 
   if (yieldInfo === "" || indexingTypes === "") {
-    console.log("vazio");
   }
 
   if (yieldInfo === "brutoActive" && indexingTypes === "posActive") {
@@ -114,12 +97,7 @@ export default function ResultsContainer() {
         <div>
           <h3> Projeção de valores </h3>
           <div>
-            <Graphic
-              yieldInfo={yieldInfo}
-              indexTypes={indexingTypes}
-              withAportArray={arrayWithAportGlobal}
-              withoutAportArray={arrayWithoutAportGlobal}
-            />
+            <Graphic yieldInfo={yieldInfo} indexTypes={indexingTypes} />
           </div>
         </div>
       </div>
