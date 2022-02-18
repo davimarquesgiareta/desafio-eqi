@@ -50,7 +50,7 @@ Inicie o servidor
 
 ## Informações Adicionais
 
-* Responsividade para dispostiveis móveis.
+* Responsividade para dispositivos móveis.
 * Código Formatado com o Prettier.
 * Otimização para SEO (meta tags).
 
